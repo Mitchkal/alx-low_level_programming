@@ -7,15 +7,16 @@
  * Return: Always 0 (Success)
  *
  */
-
+0000
 int main(void)
 {
 
 	int n;
+	int y;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int y = n % 10;
+	y = n % 10;
 
 	if (y == 0)
 		printf("Last digit of %d is 0 and is 0", n);
