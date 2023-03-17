@@ -10,7 +10,7 @@ int main(void)
 	int n;
 	int letter = 'a';
 
-	for (n = 0; n < 26; n++)
+	for (n = 0; n < 24; n++)
 	{
 		putchar(letter);
 		letter++;
