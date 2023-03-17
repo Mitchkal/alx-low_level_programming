@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  *
  */
-0000
+
 int main(void)
 {
 
