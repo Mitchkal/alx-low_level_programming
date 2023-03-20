@@ -21,8 +21,12 @@ int main(void)
 				putchar (i);
 				putchar (j);
 				putchar (k);
-				putchar (',');
-				putchar (' ');
+
+				if (!(1 == 7 && k == 9))
+				{
+					putchar (',');
+					putchar (' ');
+				}
 			}
 		}
 	}
