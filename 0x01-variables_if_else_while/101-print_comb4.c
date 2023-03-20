@@ -5,13 +5,14 @@
  *putchar takes ASCII values
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
 	int j;
 	int k;
 
-	for (i = 48; j < 10; j++)
+	for (i = 48; i < 58; i++)
 	{
 		for (j = i + 1; j < 58; j++)
 		{
