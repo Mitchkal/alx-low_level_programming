@@ -3,7 +3,7 @@
 /**
  * print_alphabet - prints the alphabet
  *
- * Return: Alwyas 0 (succcess)
+ * Return: void (succcess)
  *
  */
 void print_alphabet(void)
@@ -15,5 +15,5 @@ void print_alphabet(void)
 	{
 		_putchar(letter + n);
 	}
-	_putchar('/n');
+	_putchar(10);
 }
