@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main-Entry point
+ * print_alphabet - prints the alphabet
  *
  * Return: Alwyas 0 (succcess)
  *
  */
-int main(void)
+void print_alphabet(void)
 {
 	char letter = 'a';
 	int n;
