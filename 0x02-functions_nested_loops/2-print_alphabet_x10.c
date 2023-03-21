@@ -19,7 +19,7 @@ int main(void)
 			_putchar(letter);
 			letter++;
 		}
-		_putchar('/n');
+		_putchar(10);
 	}
 
 	return (0);
