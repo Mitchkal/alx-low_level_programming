@@ -13,10 +13,7 @@ void print_alphabet(void)
 
 	for (n = 0; n < 26; n++)
 	{
-		_putchar(letter);
-		letter++;
+		_putchar(letter + n);
 	}
 	_putchar('/n');
-
-	return (0);
 }
