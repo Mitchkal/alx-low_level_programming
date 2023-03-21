@@ -4,16 +4,16 @@
  * print_alphabet - prints the alphabet
  *
  * Return: void (succcess)
- *
- */
+*/
 void print_alphabet(void)
 {
-	char letter = 'a';
-	int n;
+	char c = 'a';
+	int i;
 
-	for (n = 0; n < 26; n++)
+	for (i = 0; i < 26; i++)
 	{
-		_putchar(letter + n);
+		_putchar(c + i);
 	}
 	_putchar(10);
 }
+
