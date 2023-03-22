@@ -6,7 +6,7 @@
  * Return: int
  *@n: number to find lastdigit
  */
-print_last_digit(int n)
+int print_last_digit(int n)
 {
 	int t;
 
