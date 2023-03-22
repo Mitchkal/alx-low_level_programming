@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main-Entry point
+ * print_alphabet_x10 - print alphabet
  *
  * Return: Always 0 (success)
  *
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int k = 0;
 	char letter = 'a';
@@ -19,8 +19,6 @@ int main(void)
 			_putchar(letter);
 			letter++;
 		}
-		_putchar(10);
+		_putchar('\n');
 	}
-
-	return (0);
 }
