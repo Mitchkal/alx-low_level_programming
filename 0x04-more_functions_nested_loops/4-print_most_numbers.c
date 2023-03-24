@@ -9,11 +9,11 @@
 
 void print_most_numbers(void)
 {
-	int num = 0;
+	char num = 0;
 
 	for (num = 48; num <= 57; num++)
 	{
-		if (num == 50 || num == 52)
+		if ((num == 50) || (num == 52))
 		{
 			continue;
 		}
@@ -22,6 +22,6 @@ void print_most_numbers(void)
 		{
 			_putchar(num);
 		}
-		-putchar('/n');
+		_putchar('/n');
 	}
 }
