@@ -1,27 +1,25 @@
 #include "main.h"
+
 /**
-*print_square - prints a straight line
-*@n: the dimensionof the square
-*
-*/
-void print_square(int n);
+ * print_square - print a square of #'s given size
+ * @size: size to draw
+ */
+
+void print_square(int size)
 {
-	int i, j, n;
+	int row, column;
 
-	if (n <= 0)
+	if (size > 0)
 	{
-		putchar('\n');
-		return (0);
-	}
-
-	for (i = 0; i < n; i++)
-	{
-		for (j = 0; j < n; j++)
+		for (row = 1; row <= size; row++)
 		{
-			putchar('#');
+			for (column = 1; column <= size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		putchar('\n');
-
 	}
-	return (0);
+	else
+		_putchar('\n');
 }
