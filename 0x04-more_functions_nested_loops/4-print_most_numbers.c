@@ -1,27 +1,17 @@
 #include "main.h"
 
 /**
-*print_most_numbers - prints the value is a digit
-*
-*
-*Return: void
-*/
+ * print_most_numbers - print 0 to 9, skip 2 and 4
+ */
 
 void print_most_numbers(void)
 {
-	char num = 0;
+	char i;
 
-	for (num = 48; num <= 57; num++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		if ((num == 50) || (num == 52))
-		{
-			continue;
-		}
-
-		else
-		{
-			_putchar(num);
-		}
-		_putchar('/n');
+		if (i != '2' && i != '4')
+			_putchar(i);
 	}
+	_putchar('\n');
 }
