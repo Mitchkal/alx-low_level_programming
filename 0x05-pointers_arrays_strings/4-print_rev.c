@@ -9,9 +9,10 @@ void _print_rev(char *s)
 	char g;
 	int i;
 	int j;
+	char *st;
 
 	j = strlen(s) + 1;
-	char *st = (char *) malloc(j * sizeof(char));
+	*st = (char *) malloc(j * sizeof(char));
 
 	strcpy(st, s);
 
