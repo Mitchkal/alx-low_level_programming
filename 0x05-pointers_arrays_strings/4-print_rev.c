@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*_print_rev - prints a string in reverse, followed by a new line
+*print_rev - prints a string in reverse, followed by a new line
 *@s : The string to be reversed
 */
 
-void _print_rev(char *s)
+void print_rev(char *s)
 {
 	char g;
 	int i;
@@ -16,7 +16,7 @@ void _print_rev(char *s)
 
 	strcpy(st, s);
 
-	for (i = strlen(st); i >= 0; i--)
+	for (i = strlen(st) - 1; i >= 0; i--)
 	{
 		g = st[i];
 
