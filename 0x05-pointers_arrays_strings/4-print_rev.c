@@ -12,7 +12,7 @@ void _print_rev(char *s)
 	char *st;
 
 	j = strlen(s) + 1;
-	*st = (char *) malloc(j * sizeof(char));
+	st = (char *) malloc(j * sizeof(char));
 
 	strcpy(st, s);
 
