@@ -9,11 +9,13 @@ void rev_string(char *s)
 {
 	char g;
 	int i;
-	int j;
+	unsigned int j;
 	int k;
-	char st[strlen(s) + 1];
+	char *st;
 
-	strcpy(st, str);
+	st = malloc(strlen(s) + 1);
+
+	strcpy(st, s);
 
 
 
@@ -30,7 +32,7 @@ void rev_string(char *s)
 
 
 
-	for (i = strlen(st); i >= 0; i--)
+	for (i = strlen(st) - 1; i >= 0; i--)
 	{
 		g = st[i];
 
