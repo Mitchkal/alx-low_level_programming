@@ -4,39 +4,37 @@
 *rev_string - prints a string in reverse, followed by a new line
 *@s : The string to be reversed
 */
-
 void rev_string(char *s)
 {
-	char g;
+	char *st;
 	int i;
 	unsigned int j;
-	int k;
-	char *st;
+	unsigned int len;
 
-	st = malloc(strlen(s) + 1);
+	len = strlen(s);
+	st = (char *) malloc((len + 1) * sizeof(char));
 
-	strcpy(st, s);
-
-
-
-
-	for (j = 0; j <= strlen(s) + 1; j++)
+	if (st == NULL)
 	{
-		k = s[j];
+		return;
+	}
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		st[i] = s[i];
+	}
+	st[i] = '\0';
+	for (j = 0; j < len; j++)
+	{
 
-		_putchar(k);
-
-
+		_putchar(s[j]);
 	}
 	_putchar('\n');
 
-
-
-	for (i = strlen(st) - 1; i >= 0; i--)
+	for (i = len - 1; i >= 0; i--)
 	{
-		g = st[i];
-
-		_putchar(g);
+		_putchar(st[i]);
 	}
 	_putchar('\n');
+	free(st);
 }
+
