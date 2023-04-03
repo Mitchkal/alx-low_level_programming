@@ -4,6 +4,7 @@
  *@b : the character
  *@s : the memory location
  *@n : the number of times to print
+ *Return: Returns the written memory location
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -13,7 +14,7 @@ char *_memset(char *s, char b, unsigned int n)
 	while (n--)
 	{
 		*ptr++ = b;
-	
+
 	}
 	return (s);
 }
