@@ -4,7 +4,7 @@
 #include <string.h>
 /**
  * str_copy - copy a string to new location
- * @ str : the string
+ * @str : the string
  * Return: pointer to new string,or NULL
  */
 char *str_copy(char *str)
