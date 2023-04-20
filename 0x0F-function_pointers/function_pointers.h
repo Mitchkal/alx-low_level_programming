@@ -1,5 +1,5 @@
 #ifndef FUNC_H
-#define FINC_H
+#define FUNC_H
 #include <stdio.h>
 #include <stdlib.h>
 int _putchar(char c);
