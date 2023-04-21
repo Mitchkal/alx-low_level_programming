@@ -7,8 +7,6 @@
  */
 void print_all(const char * const format, ...)
 {
-	if (format == NULL)
-		return;
 
 	va_list valist;
 	unsigned int i = 0;
@@ -17,6 +15,9 @@ void print_all(const char * const format, ...)
 	const char *s;
 
 	va_start(valist, format);
+
+	if (format == NULL)
+		return;
 
 	while (format[i])
 	{
