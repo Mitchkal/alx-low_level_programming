@@ -40,12 +40,12 @@ void print_string(va_list valist)
 
 	str = va_arg(valist, char *);
 
-	if (s == NULL)
+	if (str == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
-	printf("%s", s);
+	printf("%s", str);
 }
 
 /**
@@ -54,24 +54,20 @@ void print_string(va_list valist)
  */
 void print_all(const char * const format, ...)
 {
-	char *separator;
-	va_list valist; /*pointer to argument list*/
-	int k, l;
-
-	l = 0;
-	separator = "";
-
-
+	va_list valist;
+	unsigned int k,l = 0;
+	char *separator = "";
 	datatype choose[] = { {'c', print_char},
 			      {'i', print_int},
 			      {'f', print_float},
 			      {'s', print_string},
-			      {'\0', NULL} };
+			      {'\0', NULL}
+	};
 
 
 	va_start(valist, format);
 
-	while (format != NULL && format[l] != '\0')
+	while (format[l] != '\0')
 	{
 		k = 0;
 
