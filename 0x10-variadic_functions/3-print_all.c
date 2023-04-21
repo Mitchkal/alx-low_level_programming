@@ -36,9 +36,9 @@ void print_float(va_list valist)
  */
 void print_string(va_list valist)
 {
-	char *s;
+	char *str;
 
-	s = va_arg(valist, char *);
+	str = va_arg(valist, char *);
 
 	if (s == NULL)
 	{
@@ -54,9 +54,13 @@ void print_string(va_list valist)
  */
 void print_all(const char * const format, ...)
 {
-	va_list valist;
-	int k, l = 0;
-	char *separator = "";
+	char *separator;
+	va_list valist; /*pointer to argument list*/
+	int k, l;
+
+	l = 0;
+	separator = "";
+
 
 	datatype choose[] = { {'c', print_char},
 			      {'i', print_int},
