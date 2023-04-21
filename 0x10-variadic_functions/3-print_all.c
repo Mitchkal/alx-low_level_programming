@@ -7,15 +7,18 @@
  */
 void print_all(const char * const format, ...)
 {
+	if (format == NULL)
+		return;
+
 	va_list valist;
 	unsigned int i = 0;
 	char *separator = "";
-	const char *str = " ";
-	char *s;
+	const char *str;
+	const char *s;
 
 	va_start(valist, format);
 
-	while (format && format[i])
+	while (format[i])
 	{
 		switch (format[i])
 		{
@@ -30,7 +33,7 @@ void print_all(const char * const format, ...)
 				printf("%s%f", separator, va_arg(valist, double));
 				break;
 			case 's':
-				s = va_arg(valist, char *);
+				s = va_arg(valist, const char *);
 				str = s ? s : "(nil)";
 				printf("%s%s", separator, str);
 				break;
