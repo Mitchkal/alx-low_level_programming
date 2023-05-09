@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		print_error("Usage: %s file_from_file_to\n", argv[0]);
+		print_error("Usage: %s file_from file_to\n", argv[0]);
 		exit(97);
 	}
 
