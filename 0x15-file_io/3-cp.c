@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 
 		if (bytes_written == -1)
 		{
-			print_error("Error: Can't write to file %s\n", file_to);
+			print_error("Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
 	}
@@ -75,7 +75,7 @@ int main(int argc, char **argv)
 
 	if (close(fd_from) == -1)
 	{
-		print_error("Error: Cant close fd %s\n", strerror(errno));
+		print_error("Error: Can't close fd %s\n", strerror(errno));
 		exit(100);
 	}
 
