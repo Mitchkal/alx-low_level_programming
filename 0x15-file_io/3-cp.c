@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 
 	if (fd_to == -1)
 	{
-		print_error("Error: Can't write to file %s\n", file_to);
+		print_error("Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 
