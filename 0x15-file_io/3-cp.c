@@ -1,5 +1,6 @@
 #include "main.h"
 #define BUFFER_SIZE 1024
+#include <stdio.h>
 
 /**
  * print_error - prints the error message
@@ -25,10 +26,13 @@ int main(int argc, char **argv)
 	int fd_from, fd_to;
 	char buffer[BUFFER_SIZE];
 	ssize_t bytes_read, bytes_written;
+	const char *progname;
+
 
 	if (argc != 3)
 	{
-		print_error("Usage: %s file_from file_to\n", argv[0]);
+		progname = basename(argv[0]);
+		print_error("Usage: %s file_from file_to\n", progname);
 		exit(97);
 	}
 
@@ -50,6 +54,7 @@ int main(int argc, char **argv)
 		print_error("Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
+
 
 	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
