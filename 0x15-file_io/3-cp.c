@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 	if (fd_to == -1)
 	{
 		print_error("Error: Can't write to file %s\n", file_to);
-		exit(98);
+		exit(99);
 	}
 
 	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
