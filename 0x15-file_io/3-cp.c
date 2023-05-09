@@ -75,13 +75,13 @@ int main(int argc, char **argv)
 
 	if (close(fd_from) == -1)
 	{
-		print_error("Error: Cant close fd %d\n", strerror(errno));
+		print_error("Error: Cant close fd %s\n", strerror(errno));
 		exit(100);
 	}
 
 	if (close(fd_to) == -1)
 	{
-		print_error("Error: Can't close fd %d\n", strerror(errno));
+		print_error("Error: Can't close fd %s\n", strerror(errno));
 		exit(100);
 	}
 
