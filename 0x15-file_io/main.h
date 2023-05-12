@@ -7,7 +7,7 @@
 #include <errno.h>
 #include <string.h>
 #include <libgen.h>
-
+#include <elf.h>
 
 void print_error(const char *message, const char *arg);
 ssize_t read_textfile(const char *filename, size_t letters);
