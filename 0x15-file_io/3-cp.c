@@ -54,8 +54,8 @@ int main(int argc, char **argv)
 		close(fd_to), exit(98);
 	}
 	if (close(fd_from) == -1)
-		print_error("Error: Can't close fd %s\n", strerror(errno)), exit(100);
+		print_error("Error: Can't close fd %d\n", strerror(errno)), exit(100);
 	if (close(fd_to) == -1)
-		print_error("Error: Can't close fd %s\n", strerror(errno)), exit(100);
+		print_error("Error: Can't close fd %d\n", strerror(errno)), exit(100);
 	return (0);
 }
