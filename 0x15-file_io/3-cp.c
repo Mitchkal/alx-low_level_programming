@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	if (argc != 3)
 	{
 		/*progname = basename(argv[0]);*/
-		print_error("Usage: %s file_from file_to\n", argv[0]), exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
 
 	file_from = argv[1], file_to = argv[2];
