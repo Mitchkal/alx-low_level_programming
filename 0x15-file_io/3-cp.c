@@ -21,15 +21,15 @@ void print_error(const char *message, const char *arg)
 
 int main(int argc, char **argv)
 {
-	const char *file_from, *file_to, *progname;
+	const char *file_from, *file_to;
 	int fd_from, fd_to;
 	char buffer[BUFFER_SIZE];
 	ssize_t bytes_read, bytes_written;
 
 	if (argc != 3)
 	{
-		progname = basename(argv[0]);
-		print_error("Usage: %s file_from file_to\n", progname), exit(97);
+		/*progname = basename(argv[0]);*/
+		print_error("Usage: %s file_from file_to\n", argv[0]), exit(97);
 	}
 
 	file_from = argv[1], file_to = argv[2];
