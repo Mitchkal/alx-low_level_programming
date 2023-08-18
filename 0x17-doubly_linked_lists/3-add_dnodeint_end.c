@@ -1,4 +1,4 @@
-#include "list,h"
+#include "lists.h"
 /**
  * add_dnodeint_end - add node at end
  * @head: points to first node
@@ -11,7 +11,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	dlistint_t *newnode;
 
 	newnode = malloc(sizeof(dlistint_t));
-	if (!head)
+	if (*head == NULL)
 	{
 		newnode->n = n;
 		newnode->next = NULL;
